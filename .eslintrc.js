@@ -37,6 +37,8 @@ module.exports = {
             'warn',
             {
                 groups: [
+                    ['^react', '^@?\\w'],
+                    ['^next', '^@next'],
                     ['^@?\\w', '^\\u0000'],
                     ['^@/lib', '^@/hooks'],
                     ['^@/data'],
