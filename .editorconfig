@@ -1,0 +1,17 @@
+# EditorConfig helps developers define and maintain consistent coding styles across different editors and IDEs
+# For more information about EditorConfig, please visit http://editorconfig.org
+
+# Top-most EditorConfig file
+root = true
+
+# Unix-style newlines with a newline ending every file
+[*]
+charset = utf-8 # 使用 UTF-8 编码
+indent_style = space # 使用空格缩进
+indent_size = 4 # 缩进大小为 4 个空格
+end_of_line = lf # 使用 Unix 风格的换行符
+insert_final_newline = true # 每个文件末尾插入空行
+trim_trailing_whitespace = true # 删除行尾多余的空格
+
+[.{yml,yaml,editorconfig,md}]
+indent_size = 2 # 对于 YAML、Markdown 等文件，缩进大小为 2 个空格

@@ -1,0 +1,11 @@
+.next
+.log
+.DS_Store
+.jest-*
+node_modules
+*.log
+**/.env*
+.yarn
+.yarnrc
+.gitignore
+.idea
