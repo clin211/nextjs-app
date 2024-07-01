@@ -1,0 +1,11 @@
+$brand-color: #ff4500;
+
+.container {
+    background-color: #f7f7f7;
+    min-height: 100vh;
+
+    .title {
+        color: $brand-color;
+        font-size: 16px;
+    }
+}
