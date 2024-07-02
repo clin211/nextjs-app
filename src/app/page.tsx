@@ -1,3 +1,5 @@
+import { Button, ColorPicker } from 'antd';
+
 import Counter from '@/components/Counter';
 
 import styles from '@/assets/styles/home.module.scss';
@@ -11,6 +13,8 @@ export default function Home() {
                 <h6 className='text-xl text-black'>环境变量：{DB_HOST}</h6>
             </div>
             <Counter />
+            <Button type='primary'>按钮</Button>
+            <ColorPicker defaultValue='#1677ff' />
         </main>
     );
 }
