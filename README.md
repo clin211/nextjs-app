@@ -1,36 +1,60 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Next.js App
 
-## Getting Started
+## 项目简介
 
-First, run the development server:
+这是一个使用 Next.js、Tailwind CSS、Zustand、Immer、Ant Design (antd)、ESLint、Prettier、Husky 和 lint-staged 搭建。
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 技术栈
+
+-   **Next.js**: React 框架，用于构建服务端渲染和静态网站生成的应用。
+-   **Tailwind CSS**: 一个功能类优先的 CSS 框架，用于快速构建自定义用户界面。
+-   **Zustand**: 一个轻量级的状态管理库。
+-   **Immer**: 用于帮助编写更简洁的不可变数据处理逻辑。
+-   **Ant Design (antd)**: 一套企业级 UI 设计语言和 React 组件库。
+-   **ESLint**: 一个插件化的 JavaScript 代码检查工具。
+-   **Prettier**: 一个代码格式化工具。
+-   **Husky**: 一个 Git hooks 工具，用于在提交代码前运行脚本。
+-   **lint-staged**: 一个工具，用于在 Git 暂存文件上运行 linters。
+
+## 项目结构
+
+```tree
+.
+├── README.md
+├── commitlint.config.ts
+├── next-env.d.ts
+├── next.config.mjs
+├── package.json
+├── pnpm-lock.yaml
+├── postcss.config.mjs
+├── public                          # 静态资源
+│   ├── next.svg
+│   └── vercel.svg
+├── src
+│   ├── app                         # App router
+│   ├── assets                      # 静态资源
+│   ├── components                  # 组件
+│   ├── store                       # Zustand 状态管理
+│   ├── hooks                       # 自定义 Hooks
+│   ├── lib                         # 库函数
+│   ├── utils                       # 工具函数
+│   └── data                        # 静态数据
+├── tailwind.config.ts
+├── tsconfig.json
+└── typings.d.ts
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 克隆与运行
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
--   [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
--   [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+-   克隆仓库代码
+    ```sh
+    $ git clone https://github.com/clin211/nextjs-app
+    ```
+-   安装依赖
+    ```sh
+    $ pnpm i
+    ```
+-   运行项目
+    ```sh
+    $ pnpm dev
+    ```
